@@ -95,7 +95,7 @@ class Field(object):
 
 # 继承父类Field
 class StringField(Field):
-    def __init__(self, name=None, primary_key=False, default=None):
+    def __init__(self, name=None, primary_key=False, default=None,ddl='varchar(100)'):
         super().__init__(name, 'varchar', primary_key, default)
 
 class BooleanField(Field):
