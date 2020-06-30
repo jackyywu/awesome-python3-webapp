@@ -22,7 +22,7 @@ async def create_pool(loop, **kw):
         port = kw.get('port', 3306),  # 端口号
         user = kw['user'],  # 用户名
         password = kw['password'],  # 密码
-        db = kw['db'],  # 数据库
+        db = kw['database'],  # 数据库
         charset = kw.get('charset', 'utf8'),  # 编码格式
         autocommit = kw.get('autocommit', True),  # 自动提交
         maxsize = kw.get('maxsize', 10),  # 最大连接数量
